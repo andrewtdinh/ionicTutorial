@@ -19,7 +19,7 @@ app.all('*', function(req, res, next) {
 app.get('/sessions', sessions.findAll);
 app.get('/sessions/:id', sessions.findById);
 
-app.set('port', process.env.PORT || 5000);
+app.set('port', process.env.PORT || 8100);
 
 app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));

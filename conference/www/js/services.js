@@ -1,4 +1,4 @@
 angular.module('starter.services', ['ngResource'])
-.factory('Service', function($resource){
-  return $resource('http://localhost:5000/sessions/:sessionId');
+.factory('Session', function($resource){
+  return $resource('http://localhost:8100/sessions/:sessionId');
 });
