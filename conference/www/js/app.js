@@ -47,22 +47,23 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
-    .state('app.playlists', {
-      url: "/playlists",
-      views: {
-        'menuContent': {
-          templateUrl: "templates/playlists.html",
-          controller: 'PlaylistsCtrl'
-        }
-      }
-    })
 
-  .state('app.single', {
-    url: "/playlists/:playlistId",
+  .state('app.sessions', {
+    url: "/sessions",
     views: {
       'menuContent': {
-        templateUrl: "templates/playlist.html",
-        controller: 'PlaylistCtrl'
+        templateUrl: 'templates/sessions.html',
+        controller: 'SessionsCtrl'
+      }
+    }
+  })
+
+  .state('app.session', {
+    url: '/sessions/:sessionId',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/session.html',
+        controller: 'SessionCtrl'
       }
     }
   });
