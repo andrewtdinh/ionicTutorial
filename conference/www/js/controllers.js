@@ -32,7 +32,7 @@ angular.module('starter.controllers', ['starter.services'])
     }, 1000);
   };
 
-  $scope.fbLogin() = function(){
+  $scope.fbLogin = function(){
     openFB.login(
       function(response) {
         if(response.status === 'connected') {
@@ -43,7 +43,7 @@ angular.module('starter.controllers', ['starter.services'])
         }
       },
       {scope: 'email,publish_actions'});
-  }
+  };
 })
 
 .controller('SessionsCtrl', function($scope, Session) {
