@@ -36,7 +36,7 @@ angular.module('starter.controllers', ['starter.services'])
     openFB.login(
       function(response) {
         if(response.status === 'connected') {
-          console.log('Facebook login succeeded');
+          console.log('Facebook response: ' , response);
           $scope.closeLogin();
         }else{
           alert('Facebook login failed');
